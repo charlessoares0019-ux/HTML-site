@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .formulario {
+         width: 350px;
+         margin: 50px auto;
+         padding: 20px;
+         background-color: rgb(114, 100, 100);   
+         border: 1px solid white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+
+        }
+
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 8px;
+            background-color: darkkhaki;
+            color: darkslategray;
+            border: none
+        }
+    </style>
+</head>
+<body>
+    
+    <form class="formulario" onsubmit="alert('Dados salvos com sucesso')">
+        <h1>Cadastro</h1>
+        <label>Nome Completo : </label>
+        <input type="text" name="Nome" id="TXTnome">
+        <label>Data de nascimento : </label>
+        <input type="date" name="data"  min="1900-01-01" max="2025-01-01" step="1">
+        <label>Email : </label>
+        <input type="email" name="Email" id="txtemail">
+        <label>Senha : </label>
+        <input type="password" name="Senha" id="txtsenha">
+    
+    
+        <label>Genero</label>
+        Masculino <input type="radio" name="genero" required>
+        Feminino <input type="radio" name="genero">
+
+    
+    <h3>Curso</h3>
+        <select>
+            <option value="">Selecine</option>
+            <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+            <option value="Informatica">Informatica</option>
+            <option vaue="Redes">Redes</option>
+
+        </select>
+        <button type="submit">Concluir</button>
+    
+    </form>
+
+</body>
+</html>
